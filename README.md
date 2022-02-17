@@ -1,12 +1,12 @@
-# Passlock
+# PitchPanel
 
-This is an application that allows users to input and store their passwords.
+This is an application that gives users 60 seconds to make their pitches and receive feedback
 
 ### Author Name
 "Sam Ardern"
 
-### Deploy Live link on GitHub Pages
-[View here]https://ardern.github.io/passlock/
+### Deploy Live link on Heroku
+[View here]
 ## Project objectives
 The project covers the following areas of Web and Software Development:
 Understanding the overal structure of web pages and routing
@@ -24,7 +24,13 @@ Python
 * Python installation
 * A web browser
 ### How to Deploy
-Run the run.py file using the command "python3 run.py" and follow the prompts
+You can deploy the app by following the following commands
+Use `start.sh`
+Run python3 manage.py server
+Execute chmod a+x start.sh
+Run ./start.sh
+
+
 ### Known Bugs
 The application has no known bugs. Any emerging bugs will be eliminated during the iteration process
 ## Authors Info
