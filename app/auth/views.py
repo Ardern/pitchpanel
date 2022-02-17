@@ -18,11 +18,11 @@ def signup():
         db.session.add(user)
         db.session.commit()
 
-        mail_message("Welcome to Pitcher.","email/welcome_user",user.email,user=user)
+        mail_message("Welcome to PitchPanel.","email/welcome_user",user.email,user=user)
 
         return redirect(url_for('auth.login'))
 
-    title = 'Sign Up | Pitcher'
+    title = 'Sign Up | PitchPanel'
     return render_template('auth/signup.html', signup_form = form, title = title)
 
 @auth.route('/login',methods=['GET','POST'])
@@ -36,7 +36,7 @@ def login():
 
         flash('Invalid username or password.')
 
-    title = 'Log In | Pitcher'
+    title = 'Log In | PitchPanel'
     return render_template('auth/login.html', login_form = login_form, title = title)
 
 @auth.route('/logout')

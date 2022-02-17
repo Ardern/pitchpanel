@@ -15,7 +15,7 @@ def index():
     '''
     pitches = Pitch.get_pitches()
     form = PitchForm()
-    title = 'Home | Pitcher'
+    title = 'Home | PitchPanel'
     form.category.query = Category.query
     if form.validate_on_submit():
         selected_category = form.category.data
@@ -38,7 +38,7 @@ def categories(id):
     '''
     
     form = PitchForm()
-    title = 'Home | Pitcher'
+    title = 'Home | PitchPanel'
     form.category.query = Category.query
     if form.validate_on_submit():
         selected_category = form.category.data
@@ -57,7 +57,7 @@ def categories(id):
 def comment(pitch_id):
 
     comment_form = CommentForm()
-    title = 'Comments | Pitcher'
+    title = 'Comments | PitchPanel'
     pitch = Pitch.query.filter_by(id=pitch_id).first()
     # Get comments for pitch.
     comments = Comment.get_comments(pitch_id)
